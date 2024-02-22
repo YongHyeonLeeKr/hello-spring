@@ -1,6 +1,8 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import hello.hellospring.service.MemberService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;
@@ -8,6 +10,7 @@ import java.util.*;
 
 
 public class MemoryMemberRepository implements MemberRepository{
+
 
     private static Map<Long, Member> store = new HashMap();
     private static long sequence = 0L;
