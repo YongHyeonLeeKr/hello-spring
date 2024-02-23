@@ -28,7 +28,7 @@ public class MemoryMemberIntegrationTest {
     public void 회원가입() throws Exception {
         //Given
         Member member = new Member();
-        member.setName("spring5");
+        member.setName("spring10");
         //When
         Long saveId = memberService.join(member);
         //Then
